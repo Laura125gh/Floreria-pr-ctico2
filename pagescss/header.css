@@ -1,0 +1,70 @@
+* {                        
+    padding: 0;            
+    margin: 0;             
+    text-decoration: 0;    
+    box-sizing: border-box;
+}                          
+body {                            
+    background-color: #F8F1E7;
+}                             
+
+/* header */ 
+header {                                  
+    display: flex;                         
+    flex-direction: column;                
+    align-items: center;                   
+    padding: 15px 20px;                    
+    background-color:rgb(224, 193, 203);
+}                                          
+                                           
+                                      
+.logo img {                                
+    width: 150px;                          
+    height: auto;                          
+    display: block;                        
+    margin: 0 auto 0;                   
+}                                          
+
+.pages {                                                                                                  
+    display: flex;                                                                                        
+    padding: 0px;                                                                                                                                                        
+    justify-content: center;                                                                              
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;                                                                                                     
+}                                                                                                         
+                                                                                                                                                                                                            
+.pages a {
+    color: #713d50;
+    text-decoration: none;
+    margin: 10px 18px;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 23px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.pages a:hover {
+    color: #bd718b;
+}   
+
+
+/* footer */                                 
+.enlaces {                                                                                                            
+    display: flex;                                                                                                   
+    justify-content: center;                                                                                                                       
+    align-items: center;                                                                                                                                                                                        
+    flex-wrap: wrap;                                                                                                 
+    padding: 30px;                                                                                                    
+    background-color: rgb(224, 193, 203);                                                                            
+    font-family: 'Cormorant Garamond', serif;
+}                                            
+.enlaces a {                                 
+    color: #713d50;                          
+    text-decoration: none;                   
+    margin: 10px 18px;                       
+    font-size: 21px;                         
+    font-weight: 600;                        
+    transition: 0.3s;                        
+}                                                                                                                                
+.enlaces a:hover {                           
+    color: white;                            
+}                                            
