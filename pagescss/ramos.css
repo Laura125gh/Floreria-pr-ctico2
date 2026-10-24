@@ -186,3 +186,155 @@ h3 {
 #vaciar-carrito:hover {
     background-color: #233D4D;
 }
+
+
+/* ==============================
+   MEDIA QUERY PARA TABLETS
+============================== */
+@media (max-width: 992px) {
+
+    /* CONTENIDO PRINCIPAL */
+    main {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    /* CATÁLOGO */
+    .catalogo {
+        width: 100%;
+        min-height: auto;
+        padding: 20px;
+        background-attachment: scroll;
+    }
+
+    .catalogo h2 {
+        font-size: 30px;
+        margin: 15px 0 25px;
+    }
+
+    /* TARJETAS DE PRODUCTOS */
+    .productos {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .productos .card {
+        width: calc(50% - 20px);
+        max-width: 20rem;
+    }
+
+    /* CARRITO */
+    .carrito {
+        width: 100%;
+        height: auto;
+        max-height: none;
+        overflow-y: visible;
+        position: static;
+        padding: 25px;
+    }
+
+    /* TOTAL */
+    .total {
+        padding: 20px;
+        justify-content: center;
+    }
+}
+
+
+/* ==============================
+   MEDIA QUERY PARA CELULARES
+============================== */
+@media (max-width: 576px) {
+
+    /* CATÁLOGO */
+    .catalogo {
+        padding: 15px 10px;
+    }
+
+    .catalogo h2 {
+        font-size: 25px;
+        margin: 15px 0 20px;
+    }
+
+    /* UNA TARJETA POR FILA */
+    .productos {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 0;
+    }
+
+    .productos .card {
+        width: 100%;
+        max-width: 320px;
+    }
+
+    .catalogo img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+
+    /* BOTÓN AGREGAR AL CARRITO */
+    .btn-rosa {
+        padding: 9px 18px;
+        font-size: 14px;
+    }
+
+    /* CARRITO */
+    .carrito {
+        width: 100%;
+        padding: 20px 12px;
+    }
+
+    .carrito h2 {
+        font-size: 23px;
+    }
+
+    /* PRODUCTOS DENTRO DEL CARRITO */
+    .producto-carrito {
+        gap: 10px;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .producto-carrito img {
+        width: 65px;
+        height: 65px;
+    }
+
+    .datos-producto {
+        flex: 1;
+        min-width: 0;
+        overflow-wrap: anywhere;
+    }
+
+    .datos-producto p {
+        font-size: 14px;
+    }
+
+    .producto-carrito .datos-producto button {
+        padding: 5px 10px;
+        font-size: 13px;
+    }
+
+    /* TOTAL DE LA COMPRA */
+    .total {
+        padding: 18px 10px;
+        justify-content: center;
+    }
+
+    .total h3 {
+        font-size: 20px;
+    }
+
+    /* BOTÓN VACIAR CARRITO */
+    #vaciar-carrito {
+        max-width: 100%;
+        padding: 9px 12px;
+        font-size: 14px;
+    }
+}
+
